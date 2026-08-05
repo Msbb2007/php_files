@@ -21,7 +21,7 @@ body {
 }
 
 .calculator-grid h1 {
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
     text-align: center;
     color: #333333;
 }
@@ -33,7 +33,7 @@ body {
     border-radius: 12px;
     margin-bottom: 15px;
     padding: 10px 15px;
-    font-size: 28px;
+    font-size: 32px;
     text-align: left;
     direction: ltr;
     background-color: #f8f9fb;
