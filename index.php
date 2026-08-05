@@ -39,4 +39,4 @@ function myTest(){
 for($i=0; $i<6; $i++){
     myTest();
 }
-
+?>
