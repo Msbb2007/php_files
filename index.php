@@ -19,7 +19,7 @@ if (isset($_POST['btn'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ماشین حساب PHP</title>
+    <title> پروژه ماشین حساب </title>
     <link rel="stylesheet" href="./Styles/style.css">
 </head>
 <body>
