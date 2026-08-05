@@ -1,14 +1,14 @@
-<?php 
+<?php
 $currentValue = $_POST['display'] ?? '';
 
-if(isset($_POST['btn'])){
+if (isset($_POST['btn'])) {
     $btnValue = $_POST['btn'];
 
-    if($btnValue='C'){
-        $currentValue='';
-    } elseif($btnValue='⌫'){
+    if ($btnValue === 'C') {
+        $currentValue = '';
+    } elseif ($btnValue === '⌫') {
         $currentValue = substr($currentValue, 0, -1);
-    } else{
+    } else {
         $currentValue .= $btnValue;
     }
 }
@@ -19,18 +19,24 @@ if(isset($_POST['btn'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پروژه ماشین حساب</title>
+    <title>ماشین حساب PHP</title>
     <link rel="stylesheet" href="./Styles/style.css">
 </head>
 <body>
-    <div class="calculate">
-        <h1>ماشین حساب</h1>
+<div class="calculator-grid">
+    <h1>ماشین حساب</h1>
 
-        <form action="calculator.php" method="POST">
-            <label for="display">نمایشگر</label>
-            <input type="text" name="display" id="display" value="<?= htmlspecialchars($currentValue) ?>" readonly placeholder="0">
+    <form action="index.php" method="POST">
+        <input
+            type="text"
+            name="display"
+            id="display"
+            value="<?= htmlspecialchars($currentValue) ?>"
+            readonly
+            placeholder="0"
+        >
 
-            <div class="buttons">
+        <div class="buttons">
             <button type="submit" name="btn" value="C" class="btn clear">C</button>
             <button type="submit" name="btn" value="/" class="btn operator">/</button>
             <button type="submit" name="btn" value="*" class="btn operator">×</button>
@@ -51,13 +57,11 @@ if(isset($_POST['btn'])){
             <button type="submit" name="btn" value="3" class="btn">3</button>
 
             <button type="submit" formaction="calculator.php" class="btn equal">=</button>
+
             <button type="submit" name="btn" value="0" class="btn zero">0</button>
             <button type="submit" name="btn" value="." class="btn">.</button>
-            </div>
-
-        </form>
-
-    </div>
-    
+        </div>
+    </form>
+</div>
 </body>
 </html>
