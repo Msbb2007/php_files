@@ -18,6 +18,12 @@ Place the project inside XAMPP htdocs folder and open:
 
 <code>http://localhost/php_files/index.php</code>
 
+<h2>Screenshots</h2>
+
+<img src="./Screenshots/Screenshot (91).png" alt="Calculator Screenshot" width="400">
+
+<img src="./Screenshots/Screenshot (92).png" alt="Calculator Screenshot" width="400">
+
 <h2>Made By</h2>
 
 <p>MSB</p>
