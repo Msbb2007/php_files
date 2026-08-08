@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         <div class="error"><?= htmlspecialchars($error) ?></div>
     <?php else: ?>
         <div class="result">
-            <p>عبارت: <strong><?= htmlspecialchars($expression) ?></strong></p>
+        <p>عبارت: <strong dir="ltr" style="display: inline-block;"><?= htmlspecialchars($expression) ?></strong></p>
             <p>نتیجه: <strong><?= htmlspecialchars((string) $result) ?></strong></p>
         </div>
     <?php endif; ?>
